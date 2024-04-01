@@ -1,0 +1,109 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "John Walker",
+      "email": "johnwalker@gmail.com",
+      "password": "johnw!",
+      "rank": 2,
+      "rating": 4.2,
+      "favoriteCategory": "Nature",
+      "profileViews": 8250,
+      "avatar": "../assets/images/avatar_1.jpg",
+        "submissions": [
+          {
+            "imageSource": "../assets/images/portfolio-01.jpg",
+            "award": 1000,
+            "positionWon": 2,
+            "contestName": "Walk In The Beach"
+          },
+          {
+            "imageSource": "../assets/images/portfolio-02.jpg",
+            "award": null,
+            "positionWon": 5,
+            "contestName": "Walk In The Nature"
+          },
+          {
+            "imageSource": "../assets/images/portfolio-03.jpg",
+            "award": null,
+            "positionWon": 6,
+            "contestName": "Walk In The Forest"
+          },
+          {
+            "imageSource": "../assets/images/portfolio-04.jpg",
+            "award": null,
+            "positionWon": 4,
+            "contestName": "Walk In The Forest"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "username": "Jane Smith",
+        "email": "janesmith@gmail.com",
+        "password": "janes!",
+        "rank": 1,
+        "rating": 4.4,
+        "favoriteCategory": "Portrait",
+        "profileViews": 5320,
+        "avatar": "../assets/images/avatar_2.jpg",
+        "submissions": [
+          {
+            "imageSource": "../assets/images/portfolio-05.jpg",
+            "award": 200,
+            "positionWon": 4,
+            "contestName": "Walk In The Forest"
+          },
+          {
+            "imageSource": "../assets/images/portfolio-06.jpg",
+            "award": 1500,
+            "positionWon": 1,
+            "contestName": "Rocky Mountain"
+          },
+          {
+            "imageSource": "../assets/images/portfolio-08.jpg",
+            "award": 500,
+            "positionWon": 3,
+            "contestName": "Blue Lake"
+          },
+          {
+            "imageSource": "../assets/images/portfolio-09.jpg",
+            "award": 200,
+            "positionWon": 5,
+            "contestName": "Walk In The Forest"
+          },
+          {
+            "imageSource": "../assets/images/portfolio-01.jpg",
+            "award": 500,
+            "positionWon": 3,
+            "contestName": "Walk In The Beach"
+          },
+          {
+            "imageSource": "../assets/images/portfolio-02.jpg",
+            "award": null,
+            "positionWon": 8,
+            "contestName": "Walk In The Nature"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "username": "David Johnson",
+        "email": "davidjohnson@gmail.com",
+        "password": "davidj!",
+        "rank": 3,
+        "rating": 4.7,
+        "favoriteCategory": "Space",
+        "profileViews": 4120,
+        "avatar": null,
+        "submissions": [
+          {
+            "imageSource": "../assets/images/portfolio-08.jpg",
+            "award": 800,
+            "positionWon": 3,
+            "contestName": "Blue Lake"
+          }
+        ]
+    }
+  ]
+}

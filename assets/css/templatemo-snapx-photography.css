@@ -41,6 +41,13 @@ figure, header, nav, section, article, aside, footer, figcaption {
   outline: 0;
 }
 
+#contests,
+#categories,
+#home,
+#users{
+  margin: 0;
+}
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -1456,7 +1463,7 @@ footer {
   background-color: #00bdfe;
   text-align: center;
   padding: 25px 0px;
-  margin-top: 120px;
+  margin-top: 0px;
 }
 
 footer p {
