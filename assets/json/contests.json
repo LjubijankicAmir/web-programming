@@ -1,0 +1,60 @@
+{
+    "contests": [
+        {
+            "id": 1,
+            "category": "nature",
+            "name": "Walk In The Forest",
+            "entry_price": 10,
+            "deadline_date": "Apr 7, 2024 08:00:00",
+            "participants": 0,
+            "submissions": 12,
+            "image_source": "../assets/images/featured-image-03.jpg",
+            "paragraph1": "Images should capture the stunning beauty of the forest, including lush greenery, sunlight filtering through the trees, and vibrant flora.",
+            "paragraph2": "",
+            "paragraph3": "Photos should not include artificial structures such as buildings, roads, or signs unless they contribute to the story or aesthetic in a meaningful way.",
+            "paragraph4": "While some editing is expected, avoid excessive manipulation that alters the natural appearance of the forest or detracts from the authenticity of the scene."
+        },
+        {
+            "id": 2,
+            "category": "random",
+            "name": "Stars In The Sky",
+            "entry_price": 20,
+            "deadline_date": "Apr 7, 2024 12:00:00",
+            "participants": 0,
+            "submissions": 10,
+            "image_source": "../assets/images/photo-video-01.jpg",
+            "paragraph1": " Images featuring clear, dark skies filled with stars providing a captivating backdrop for various compositions.",
+            "paragraph2": "Successful entries will evoke a sense of wonder, awe, or tranquility, capturing the beauty and majesty of the night sky and inspiring viewers to contemplate the universe's vastness.",
+            "paragraph3": "Avoid images with significant light pollution, which can detract from the visibility and clarity of the stars in the sky. Seek out dark sky locations away from urban areas for optimal conditions.",
+            "paragraph4": "Empty Skies: Images that lack visual interest or focal points in the sky or foreground may appear dull or uninspiring"
+        },
+        {
+            "id": 3,
+            "category": "random",
+            "name": "City Lights",
+            "entry_price": 0,
+            "deadline_date": "Apr 7, 2024 12:00:00",
+            "participants": 0,
+            "submissions": 32,
+            "image_source": "../assets/images/city-lights.jpg",
+            "paragraph1": "Reflections: Utilizing reflections from water bodies, glass surfaces, or wet pavements can create captivating visual effects, doubling the impact of city lights and adding depth to the composition.",
+            "paragraph2": "",
+            "paragraph3": "Avoid images with excessive noise or distortion, which can result from high ISO settings or poor image quality.",
+            "paragraph4": ""
+        },
+        {
+            "id": 4,
+            "category": "nature",
+            "name": "Blue Lake",
+            "entry_price": 25,
+            "deadline_date": "Apr 7, 2024 20:00:00",
+            "participants": 0,
+            "submissions": 43,
+            "image_source": "../assets/images/featured-image-02.jpg",
+            "paragraph1": "Scenic Surroundings: Including the natural surroundings of the lake such as mountains, forests, or rocky cliffs can add depth and context to the composition, enhancing the overall beauty of the scene.",
+            "paragraph2": "Images showcasing the crystal-clear blue waters of the lake create a captivating visual impact. Look for vantage points that offer unobstructed views of the lake's surface.",
+            "paragraph3": "While enhancing colors in post-processing can be tempting, avoid excessive manipulation that alters the natural appearance of the lake's blue water. Strive for a balance between enhancement and authenticity.",
+            "paragraph4": "Entries should strive to capture the unique beauty and allure of the blue lake. Avoid images that lack a clear focal point or fail to evoke a sense of wonder and admiration."
+        }
+    ]
+}
