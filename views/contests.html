@@ -1,0 +1,194 @@
+<body>
+
+
+  <div class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 header-text">
+          <h2>Discover what's currently going on at <em>SnapOff</em></h2>
+          <p>Explore our current lineup of active contests, each offering unique themes and exciting opportunities to
+            showcase your photography skills.
+            Apply to your preferred contests and compete for recognition and fantastic prizes!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="photos-videos">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading text-center">
+            <h6>Photos &amp; Videos At SnapOff</h6>
+            <h4>Our Featured <em>Photos</em> At SnapOff</h4>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="item">
+            <div class="thumb">
+              <img src="assets/images/photo-video-01.jpg" alt="">
+              <div class="top-content">
+                <h4>A Walk In Nature</h4>
+                <h6><i class="fa fa-eye"></i> 2840 | <i class="fa fa-heart"></i> 1608</h6>
+              </div>
+            </div>
+            <div class="down-content">
+              <div class="row">
+                <div class="col-7">
+                  <h2>Ranked: 1st</h2>
+                </div>
+                <div class="col-5">
+                  <h6>Category: Nature</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="item">
+            <div class="thumb">
+              <img src="assets/images/photo-video-02.jpg" alt="">
+              <div class="top-content">
+                <h4>Blue Mountain Hill</h4>
+                <h6><i class="fa fa-eye"></i> 1722 | <i class="fa fa-heart"></i> 780</h6>
+              </div>
+            </div>
+            <div class="down-content">
+              <div class="row">
+                <div class="col-7">
+                  <h2>Ranked: 2nd</h2>
+                </div>
+                <div class="col-5">
+                  <h6>Category: Nature</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item">
+            <div class="thumb">
+              <img src="assets/images/photo-video-03.jpg" alt="">
+              <div class="top-content">
+                <h4>Underwater Turtle</h4>
+                <h6><i class="fa fa-eye"></i> 1436 | <i class="fa fa-heart"></i> 402</h6>
+              </div>
+            </div>
+            <div class="down-content">
+              <div class="row">
+                <div class="col-7">
+                  <h2>Ranked: 3rd</h2>
+                </div>
+                <div class="col-5">
+                  <h6>Category: Random</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item">
+            <div class="thumb">
+              <img src="assets/images/photo-video-04.jpg" alt="">
+              <div class="top-content">
+                <h4>Greeny Place</h4>
+                <h6><i class="fa fa-eye"></i> 1596 | <i class="fa fa-heart"></i> 212</h6>
+              </div>
+            </div>
+            <div class="down-content">
+              <div class="row">
+                <div class="col-7">
+                  <h2>Ranked: 4th</h2>
+                </div>
+                <div class="col-5">
+                  <h6>Category: Nature</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item">
+            <div class="thumb">
+              <img src="assets/images/photo-video-05.jpg" alt="">
+              <div class="top-content">
+                <h4>Rocky Mountain</h4>
+                <h6><i class="fa fa-eye"></i> 1596 | <i class="fa fa-heart"></i> 168</h6>
+              </div>
+            </div>
+            <div class="down-content">
+              <div class="row">
+                <div class="col-7">
+                  <h2>Ranked: 5th</h2>
+                </div>
+                <div class="col-5">
+                  <h6>Category: Random</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contest-win">
+    <div class="container-fluid">
+      <div class="row" id="contest-row">
+        <div class="col-lg-12">
+          <div class="section-heading text-center">
+            <h6>Recently Added Contests by Users</h6>
+            <h4>Current <em>Contests</em> to Enter Now &amp; <em>Win</em></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+
+  <script>
+
+    let row = document.getElementById('contest-row');
+
+    fetch('../assets/json/contests.json')
+      .then(response => response.json())
+      .then(data => {
+        data.contests.forEach(contest => {
+
+          let price;
+          if (contest.entry_price == 0) {
+            price = 'Free';
+          } else {
+            price = `€${contest.entry_price}`;
+          }
+          row.innerHTML += `
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div class="contest-item">
+            <div class="top-content">
+              <span class="award">Entry price</span>
+              <span class="price">${price}</span>
+            </div>
+            <img class="wallpaper" src="${contest.image_source}" alt="">
+            <h4>${contest.name}</h4>
+            <div class="info">
+              <span class="participants"><img src="assets//images/icon-03.png" alt=""><br>0 Participants</span>
+              <span class="submittions"><img src="assets//images/icon-01.png" alt=""><br>${contest.submissions} Submissions</span>
+            </div>
+            <div class="border-button">
+              <a href="#contest-details" onclick="setContestId(${contest.id})">Enter Contest</a>
+            </div>
+          </div>`
+        });
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+
+
+  </script>
+
+</body>
+
+</html>

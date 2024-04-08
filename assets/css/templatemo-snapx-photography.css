@@ -41,6 +41,14 @@ figure, header, nav, section, article, aside, footer, figcaption {
   outline: 0;
 }
 
+#contests,
+#categories,
+#home,
+#users,
+#contest-details{
+  margin: 0;
+}
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -1456,7 +1464,7 @@ footer {
   background-color: #00bdfe;
   text-align: center;
   padding: 25px 0px;
-  margin-top: 120px;
+  margin-top: 0px;
 }
 
 footer p {
@@ -1478,7 +1486,7 @@ page heading
 */
 
 .page-heading {
-  background-image: url(../images/heading-bg.jpg);
+  background-image: url('../images/heading-bg.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1691,6 +1699,13 @@ Contests Page
   padding: 0px 65px;
 }
 
+.contest-item .wallpaper {
+  width: 100%;
+  height: 300px; /* adjust this value as needed */
+  object-fit: cover;
+  object-position: center;
+}
+
 .contest-win .contest-item {
   border: 1px solid #e0e0e0;
   border-radius: 15px;
@@ -1816,6 +1831,8 @@ Contest Details Page
 --------------------------------------------- 
 */
 
+
+
 .contest-details .top-content {
   background-color: #e7f9ff;
   border-top-right-radius: 10px;
@@ -1893,18 +1910,6 @@ Contest Details Page
   margin-top: 20px;
   margin-bottom: 20px;
   position: relative;
-  padding-left: 22px;
-}
-
-.contest-details .main-content p:before {
-  width: 7px;
-  height: 7px;
-  background-color: #afafaf;
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 10px;
-  border-radius: 50%;
 }
 
 .contest-details .main-content h4.second-title {
@@ -2037,6 +2042,13 @@ Categories Page
 --------------------------------------------- 
 */
 
+.search-wallpaper {
+  width: 100%;
+  height: 300px; /* adjust this value as needed */
+  object-fit: cover;
+  object-position: center;
+}
+
 .top-categories {
   margin-top: -100px;
 }
@@ -2159,7 +2171,7 @@ Categories Page
 }
 
 .featured-contests .item .hover-effect .content span.participants {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   color: #afafaf;
   flex-basis: 50%;
@@ -2635,4 +2647,14 @@ body {
   .featured-contests .item .hover-effect .content .info {
     display: none;
   }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
 }
