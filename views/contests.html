@@ -152,13 +152,14 @@
 
     let row = document.getElementById('contest-row');
 
-    fetch('../assets/json/contests.json')
+    fetch(Constants.API_BASE_URL + 'get_contests.php')
       .then(response => response.json())
       .then(data => {
-        data.contests.forEach(contest => {
+        data.forEach(contest => {
 
           let price;
-          if (contest.entry_price == 0) {
+          let image_source = Constants.IMAGE_URL + contest.image_source + ".jpg";
+          if (contest.entry_price == null || contest.entry_price == 0) {
             price = 'Free';
           } else {
             price = `€${contest.entry_price}`;
@@ -170,7 +171,7 @@
               <span class="award">Entry price</span>
               <span class="price">${price}</span>
             </div>
-            <img class="wallpaper" src="${contest.image_source}" alt="">
+            <img class="wallpaper" src="${image_source}" alt="">
             <h4>${contest.name}</h4>
             <div class="info">
               <span class="participants"><img src="assets//images/icon-03.png" alt=""><br>0 Participants</span>

@@ -1,0 +1,70 @@
+Date : 2024-04-02 08:12:59
+Directory : c:\xampp\htdocs\project
+Total : 31 files,  30214 codes, 4578 comments, 7617 blanks, all 42409 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |         13 |     21,753 |      4,366 |      4,921 |     31,040 |
+| CSS        |          7 |      7,203 |        179 |      2,575 |      9,957 |
+| HTML       |          8 |      1,088 |         33 |        118 |      1,239 |
+| JSON       |          2 |        169 |          0 |          2 |        171 |
+| Markdown   |          1 |          1 |          0 |          1 |          2 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                   |         31 |     30,214 |      4,578 |      7,617 |     42,409 |
+| . (Files)                                                           |          2 |        149 |         12 |         37 |        198 |
+| assets                                                              |         16 |     22,340 |      2,808 |      5,532 |     30,680 |
+| assets\css                                                          |          6 |      7,201 |        174 |      2,575 |      9,950 |
+| assets\js                                                           |          8 |     14,970 |      2,634 |      2,955 |     20,559 |
+| assets\json                                                         |          2 |        169 |          0 |          2 |        171 |
+| vendor                                                              |          6 |      6,785 |      1,737 |      1,966 |     10,488 |
+| vendor\bootstrap                                                    |          2 |          3 |         11 |          0 |         14 |
+| vendor\bootstrap\css                                                |          1 |          2 |          5 |          0 |          7 |
+| vendor\bootstrap\js                                                 |          1 |          1 |          6 |          0 |          7 |
+| vendor\jquery                                                       |          4 |      6,782 |      1,726 |      1,966 |     10,474 |
+| views                                                               |          7 |        940 |         21 |         82 |      1,043 |
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                            | language   | code       | comment    | blank      | total      |
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\xampp\htdocs\project\README.md                                   | Markdown   |          1 |          0 |          1 |          2 |
+| c:\xampp\htdocs\project\assets\css\animate.css                      | CSS        |          2 |          7 |          2 |         11 |
+| c:\xampp\htdocs\project\assets\css\flex-slider.css                  | CSS        |        255 |         26 |          1 |        282 |
+| c:\xampp\htdocs\project\assets\css\fontawesome.css                  | CSS        |      4,616 |          7 |      2,183 |      6,806 |
+| c:\xampp\htdocs\project\assets\css\owl.css                          | CSS        |        146 |         26 |         14 |        186 |
+| c:\xampp\htdocs\project\assets\css\spapp.css                        | CSS        |          5 |          0 |          0 |          5 |
+| c:\xampp\htdocs\project\assets\css\templatemo-snapx-photography.css | CSS        |      2,177 |        108 |        375 |      2,660 |
+| c:\xampp\htdocs\project\assets\js\custom.js                         | JavaScript |        309 |         52 |         63 |        424 |
+| c:\xampp\htdocs\project\assets\js\isotope.js                        | JavaScript |          2 |          9 |          1 |         12 |
+| c:\xampp\htdocs\project\assets\js\isotope.min.js                    | JavaScript |          5 |          7 |          4 |         16 |
+| c:\xampp\htdocs\project\assets\js\jquery.spapp.js                   | JavaScript |         52 |          4 |         10 |         66 |
+| c:\xampp\htdocs\project\assets\js\jquery.spapp.min.js               | JavaScript |          1 |          4 |          1 |          6 |
+| c:\xampp\htdocs\project\assets\js\owl-carousel.js                   | JavaScript |      2,002 |        958 |        488 |      3,448 |
+| c:\xampp\htdocs\project\assets\js\popup.js                          | JavaScript |          2 |          2 |          1 |          5 |
+| c:\xampp\htdocs\project\assets\js\tabs.js                           | JavaScript |     12,597 |      1,598 |      2,387 |     16,582 |
+| c:\xampp\htdocs\project\assets\json\contests.json                   | JSON       |         60 |          0 |          1 |         61 |
+| c:\xampp\htdocs\project\assets\json\users.json                      | JSON       |        109 |          0 |          1 |        110 |
+| c:\xampp\htdocs\project\index.html                                  | HTML       |        148 |         12 |         36 |        196 |
+| c:\xampp\htdocs\project\vendor\bootstrap\css\bootstrap.min.css      | CSS        |          2 |          5 |          0 |          7 |
+| c:\xampp\htdocs\project\vendor\bootstrap\js\bootstrap.min.js        | JavaScript |          1 |          6 |          0 |          7 |
+| c:\xampp\htdocs\project\vendor\jquery\contest-details.js            | JavaScript |         61 |          0 |          9 |         70 |
+| c:\xampp\htdocs\project\vendor\jquery\jq.js                         | JavaScript |         31 |          0 |          6 |         37 |
+| c:\xampp\htdocs\project\vendor\jquery\jquery.js                     | JavaScript |      6,689 |      1,725 |      1,951 |     10,365 |
+| c:\xampp\htdocs\project\vendor\jquery\jquery.min.js                 | JavaScript |          1 |          1 |          0 |          2 |
+| c:\xampp\htdocs\project\views\categories.html                       | HTML       |        169 |          0 |         25 |        194 |
+| c:\xampp\htdocs\project\views\contest-details.html                  | HTML       |         70 |          0 |          4 |         74 |
+| c:\xampp\htdocs\project\views\contests.html                         | HTML       |        181 |          0 |         13 |        194 |
+| c:\xampp\htdocs\project\views\home.html                             | HTML       |        172 |          9 |          6 |        187 |
+| c:\xampp\htdocs\project\views\sign-in.html                          | HTML       |         91 |          6 |          8 |        105 |
+| c:\xampp\htdocs\project\views\sign-up.html                          | HTML       |         95 |          6 |          8 |        109 |
+| c:\xampp\htdocs\project\views\users.html                            | HTML       |        162 |          0 |         18 |        180 |
+| Total                                                               |            |     30,214 |      4,578 |      7,617 |     42,409 |
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
