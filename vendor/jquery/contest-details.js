@@ -1,13 +1,12 @@
 var countdownInterval = null;
 function loadContestDetails() {
   let id = parseInt(sessionStorage.getItem("contestId"));
-  fetch("../assets/json/contests.json")
+  fetch(Constants.API_BASE_URL + `get_contest_details.php?contestId=${id}`)
     .then((response) => response.json())
     .then((data) => {
       console.log("JSON Fethced");
-      var contest = data.contests.find(function (contest) {
-        return contest.id === id;
-      });
+
+      let contest = data;
 
       if (contest) {
         console.log(id);
@@ -47,10 +46,10 @@ function loadContestDetails() {
         </ul>
         `;
 
-        document.querySelector("#paragraph1").textContent = contest.paragraph1;
-        document.querySelector("#paragraph2").textContent = contest.paragraph2;
-        document.querySelector("#paragraph3").textContent = contest.paragraph3;
-        document.querySelector("#paragraph4").textContent = contest.paragraph4;
+        document.querySelector("#paragraph1").textContent = contest.paragraph_1;
+        document.querySelector("#paragraph2").textContent = contest.paragraph_2;
+        document.querySelector("#paragraph3").textContent = contest.paragraph_3;
+        document.querySelector("#paragraph4").textContent = contest.paragraph_4;
 
         if (contest.entry_price === 0) {
           document.querySelector(".main-button").innerHTML = `

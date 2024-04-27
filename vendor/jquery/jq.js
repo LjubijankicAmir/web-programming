@@ -1,36 +1,75 @@
 $(document).ready(function () {
-  var username;
-  var email;
-  var loginEmail;
-  var password;
-  var loginPassword;
-  var isChecked;
-  var isLogged = false;
-  $("#register_forms").submit(function (event) {
-    event.preventDefault();
-
-    username = $("#register_username").val();
-    email = $("#register_email").val();
-    password = $("#register_password").val();
-    isChecked = $("#send_updates").is(":checked");
-
-    console.log("Username: " + username);
-    console.log("Email: " + email);
-    console.log("Password: " + password);
-    console.log("Send updates: " + isChecked);
+  $.get(
+    Constants.API_BASE_URL + "login_check.php",
+    function (response) {
+      if (response.logged_in) {
+        $("#modal_trigger")
+          .html('<i class="fa fa-user"></i> Logout')
+          .off()
+          .click(function (event) {
+            event.preventDefault();
+            $.post(Constants.API_BASE_URL + "logout.php", function () {
+              location.reload();
+            });
+          });
+      } else {
+        console.log("User is not logged in");
+      }
+    },
+    "json"
+  ).fail(function (jqXHR, textStatus, errorThrown) {
+    console.error("Request failed: " + textStatus + ", " + errorThrown);
   });
 
-  $("#login_forms").submit(function (event) {
+  // Register form
+  $("#register_forms").on("submit", function (event) {
+    event.preventDefault();
+    console.log("Register form submitted");
+
+    var formData = {
+      username: $("#register_username").val(),
+      email: $("#register_email").val(),
+      password: $("#register_password").val(),
+      send_updates: $("#send_updates").is(":checked"),
+    };
+
+    $.post(
+      Constants.API_BASE_URL + "register.php",
+      formData,
+      function (response) {
+        console.log(response);
+        location.reload();
+      }
+    ).fail(function () {
+      console.log("Error occurred");
+    });
+  });
+
+  // Login form
+  $("#login_forms").on("submit", function (event) {
     event.preventDefault();
 
-    loginEmail = $("#email").val();
-    loginPassword = $("#password").val();
+    var formData = {
+      email: $("#email").val(),
+      password: $("#password").val(),
+    };
 
-    if (loginEmail === email && loginPassword === password) {
-      console.log("LOG IN SUCCESSFUL");
-      isLogged = true;
-    } else {
-      console.log("INVALID CREDENTIALS");
-    }
+    $.post(
+      Constants.API_BASE_URL + "login.php",
+      formData,
+      function (response) {
+        console.log(response);
+        if (response.success) {
+          console.log("Login successful!");
+          location.reload();
+        } else {
+          console.log("Login failed!");
+          alert(response.message);
+        }
+      },
+      "json"
+    ).fail(function () {
+      console.log("Error occurred");
+    });
   });
 });
