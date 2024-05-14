@@ -152,7 +152,7 @@
 
     let row = document.getElementById('contest-row');
 
-    fetch(Constants.API_BASE_URL + 'get_contests.php')
+    fetch(Constants.API_BASE_URL + 'contests')
       .then(response => response.json())
       .then(data => {
         data.forEach(contest => {
