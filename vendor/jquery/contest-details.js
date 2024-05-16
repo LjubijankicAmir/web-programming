@@ -1,7 +1,7 @@
 var countdownInterval = null;
 function loadContestDetails() {
   let id = parseInt(sessionStorage.getItem("contestId"));
-  fetch(Constants.API_BASE_URL + `get_contest_details.php?contestId=${id}`)
+  fetch(Constants.API_BASE_URL + `contest-details/${id}`)
     .then((response) => response.json())
     .then((data) => {
       console.log("JSON Fethced");

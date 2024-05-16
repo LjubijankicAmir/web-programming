@@ -24,7 +24,7 @@
 
   <script>
 
-    $.get(Constants.API_BASE_URL + "login_check.php", function (response) {
+    $.get(Constants.API_BASE_URL + "login_check", function (response) {
       if (!response.logged_in) {
         $(".user-info").html(`
         <div class="container">
@@ -38,7 +38,7 @@
         )
         document.getElementById("portfolio-row").innerHTML = `<div style="margin-bottom: 183px;"></div>`;
       } else {
-        $.get(Constants.API_BASE_URL + "get_user.php", function (user) {
+        $.get(Constants.API_BASE_URL + "user", function (user) {
 
           var output = "";
           var totalEarned = 0;

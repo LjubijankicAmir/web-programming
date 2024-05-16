@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $.get(
-    Constants.API_BASE_URL + "login_check.php",
+    Constants.API_BASE_URL + "login_check",
     function (response) {
       if (response.logged_in) {
         $("#modal_trigger")
@@ -8,7 +8,7 @@ $(document).ready(function () {
           .off()
           .click(function (event) {
             event.preventDefault();
-            $.post(Constants.API_BASE_URL + "logout.php", function () {
+            $.post(Constants.API_BASE_URL + "logout", function () {
               location.reload();
             });
           });
@@ -34,7 +34,7 @@ $(document).ready(function () {
     };
 
     $.post(
-      Constants.API_BASE_URL + "register.php",
+      Constants.API_BASE_URL + "register",
       formData,
       function (response) {
         console.log(response);
@@ -55,7 +55,7 @@ $(document).ready(function () {
     };
 
     $.post(
-      Constants.API_BASE_URL + "login.php",
+      Constants.API_BASE_URL + "login",
       formData,
       function (response) {
         console.log(response);
