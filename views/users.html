@@ -98,8 +98,6 @@
             avatar = Constants.IMAGE_URL + user.avatar + ".jpg";
           }
           var rank = user.rank;
-          var rating = user.rating;
-          var favoriteCategory = user.favoriteCategory;
           var profileViews = user.profileViews;
 
           $(".user-info").html(`
@@ -114,14 +112,14 @@
           <div class="col-lg-3 col-sm-6">
             <div class="info">
               <h6>Ratings</h6>
-              <h4>${rating}</h4>
+              <h4>4.64</h4>
               <span>of 5.00 Stars</span>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="info">
               <h6>Favorite</h6>
-              <h4>${favoriteCategory}</h4>
+              <h4>Nature</h4>
               <span>Picture Category</span>
             </div>
           </div>

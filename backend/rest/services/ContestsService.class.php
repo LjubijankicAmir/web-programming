@@ -20,4 +20,10 @@ class ContestsService
     {
         return $this->contests_dao->get_contest_details($contestId);
     }
+
+
+    public function get_filtered_contests($name = null, $category = null, $price = null)
+    {
+        return $this->contests_dao->get_filtered_contests($name, $category, $price);
+    }
 }
