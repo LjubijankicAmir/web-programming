@@ -12,9 +12,9 @@ class BaseDao
         $this->table = $table;
         try {
             $this->connection = new PDO(
-                "mysql:host=" . DB_HOST . ";port=" . DB_PORT . ";dbname=" . DB_NAME,
-                DB_USER,
-                DB_PASSWORD,
+                "mysql:host=" . Config::DB_HOST() . ";port=" . Config::DB_PORT() . ";dbname=" . Config::DB_NAME(),
+                Config::DB_USER(),
+                Config::DB_PASSWORD(),
                 [
                     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC

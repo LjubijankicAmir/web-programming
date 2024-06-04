@@ -24,7 +24,7 @@
 
   <script>
 
-    $.get(Constants.API_BASE_URL + "login_check", function (response) {
+    $.get(Constants.get_api_base_url() + "login_check", function (response) {
       if (!response.logged_in) {
         $(".user-info").html(`
         <div class="container">
@@ -38,7 +38,7 @@
         )
         document.getElementById("portfolio-row").innerHTML = `<div style="margin-bottom: 183px;"></div>`;
       } else {
-        $.get(Constants.API_BASE_URL + "user", function (user) {
+        $.get(Constants.get_api_base_url() + "user", function (user) {
 
           var output = "";
           var totalEarned = 0;
@@ -98,8 +98,6 @@
             avatar = Constants.IMAGE_URL + user.avatar + ".jpg";
           }
           var rank = user.rank;
-          var rating = user.rating;
-          var favoriteCategory = user.favoriteCategory;
           var profileViews = user.profileViews;
 
           $(".user-info").html(`
@@ -114,14 +112,14 @@
           <div class="col-lg-3 col-sm-6">
             <div class="info">
               <h6>Ratings</h6>
-              <h4>${rating}</h4>
+              <h4>4.64</h4>
               <span>of 5.00 Stars</span>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="info">
               <h6>Favorite</h6>
-              <h4>${favoriteCategory}</h4>
+              <h4>Nature</h4>
               <span>Picture Category</span>
             </div>
           </div>
