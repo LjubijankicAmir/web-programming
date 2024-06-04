@@ -1,7 +1,7 @@
 var countdownInterval = null;
 function loadContestDetails() {
   let id = parseInt(sessionStorage.getItem("contestId"));
-  fetch(Constants.API_BASE_URL + `contest-details/${id}`)
+  fetch(Constants.get_api_base_url() + `contest-details/${id}`)
     .then((response) => {
       if (response.status === 401) {
           window.location.href = "#users";

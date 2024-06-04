@@ -89,7 +89,7 @@
 
       row.innerHTML = '';
       
-      fetch(Constants.API_BASE_URL + 'categories?' + new URLSearchParams(new FormData(form)))
+      fetch(Constants.get_api_base_url() + 'categories?' + new URLSearchParams(new FormData(form)))
         .then(response => response.json())
         .then(data => {
           let filteredContests = data;
